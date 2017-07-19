@@ -4,7 +4,8 @@ A website designed for swahilibox community
 
 Make sure you have ruby and rails installed.
 
-To get your local 
+To get your local
+ 
 	 git clone `git@github.com:RailsGirlsMsa/SBWeb.git`
 
 	 cd SBWeb
