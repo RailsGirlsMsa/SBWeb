@@ -10,7 +10,9 @@ To get your local
 
 	 cd SBWeb
 
-	 run rails server/rails s
+	 run bundle install
+
+	 run rails server or rails s
 
 
 We welcome everyone to contribute to our projects and help us tackle existing issues! To do so, there are a few things you need to know about the code. First, our code is divided in an MVC like structure, all available inside the app folder:
