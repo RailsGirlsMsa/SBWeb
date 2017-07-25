@@ -226,7 +226,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('assets/img/header-bg.jpg');
+  background-image: url('1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -235,7 +235,6 @@ header {
   background-size: cover;
   -o-background-size: cover;
   text-align: center;
-  color: white;
 }
 header .intro-text {
   padding-top: 100px;
@@ -555,7 +554,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('assets/img/map-image.png');
+  background-image: url('map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
