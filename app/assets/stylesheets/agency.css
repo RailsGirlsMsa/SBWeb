@@ -235,7 +235,6 @@ header {
   background-size: cover;
   -o-background-size: cover;
   text-align: center;
-
 }
 header .intro-text {
   padding-top: 100px;
@@ -244,7 +243,6 @@ header .intro-text {
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
-  font color: #FFF;
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
@@ -254,7 +252,6 @@ header .intro-text .intro-heading {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 50px;
-  font color: #FFF;
   line-height: 50px;
   margin-bottom: 25px;
 }
@@ -557,7 +554,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
+  background-image: url('map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
