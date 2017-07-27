@@ -9,7 +9,7 @@
   <%= stylesheet_link_tag('agency', :media => 'all') %>
 </head>
   <body id="page-top" class="index">
-    <nav id="mainNav" class="navbar navbar-default navbar-inverse" > <!--change to <nav class="navbar navbar-default" class="navbar navbar-inverse"> -->
+    <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top" > <!--change to <nav class="navbar navbar-default" class="navbar navbar-inverse"> -->
       <div class="container-fluid">
         <div class="navbar-header page-scroll ">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -23,7 +23,7 @@
           <ul class="nav navbar-nav navbar-right navbar-fixed">
           <li class="hidden"><a href="#page-top"></a></li>
           <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#about">About us</a></li>
+          <li><a class="page-scroll" href="#about">About us</a></li>
           <li><a class="page-scroll" href="#Partners">Partners</a></li>
           <li><a class="page-scroll" href="#blog">Blog</a></li>
           <li><a class="page-scroll" href="#gallery">Gallery</a></li>
@@ -267,6 +267,7 @@ Innovative challenge.
 </body>
 
 </html>
+<section id="team">
 <div class="container">
   <h1>Meet The Team</h1>
   <div class="container">
@@ -335,6 +336,7 @@ Innovative challenge.
                     </div>
 
 </div>
+</section>
 <!-- **********************************contact us ****************** -->
     <section id="contact">
         <div class="container">
@@ -376,7 +378,7 @@ Innovative challenge.
     </section>
 
 
-<!-- footer************************************************************** -->   <footer>
+<footer>
         <div class="container">
             <di v class="row">
                 <div class="col-md-4">
