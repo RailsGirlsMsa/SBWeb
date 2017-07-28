@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SBWeb</title>
+    <title>Welcome to || Swahilibox</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag('bootstrap', :media => 'all') %>
+    <%= stylesheet_link_tag('font-awesome', :media => 'all') %>
+    <%= stylesheet_link_tag('agency', :media => 'all') %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
+  <body id="page-top" class="index">
+    <%= render 'shared/nav' %>
+    <%= render 'shared/header' %>
 
-  <body>
     <%= yield %>
+
+    <%= render 'shared/footer' %>
+
   </body>
 </html>
