@@ -1,147 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>SwahiliBox</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= stylesheet_link_tag('bootstrap', :media => 'all') %>
-  <%= stylesheet_link_tag('font-awesome', :media => 'all') %>
-  <%= stylesheet_link_tag('agency', :media => 'all') %>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-  <body id="page-top" class="index">
-    <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top " > <!--change to <nav class="navbar navbar-default" class="navbar navbar-inverse"> -->
-      <div class="container-fluid">
-        <div class="navbar-header page-scroll ">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+  <section id="blog">
+  <div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Blog</h2>
+        <h3 class="section-subheading text-muted">Our recent blogs</h3
 
-              <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-          </button>
-                <a class=" page-scroll" href="#page-top"><img src="assets/logo.png" width="70" height="70"></a>
-        <a class="navbar-brand" href="#"></a>
-        </div>
-        <a class="navbar-brand" href="#">SwahiliBox</a>
-          <ul class="nav navbar-nav navbar-right navbar-fixed">
-          <li class="hidden"><a href="#page-top"></a></li>
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a class="page-scroll" href="#about">About us</a></li>
-          <li><a class="page-scroll" href="#Partners">Partners</a></li>
-          <li><a class="page-scroll" href="#blog">Blog</a></li>
-          <li><a class="page-scroll" href="#gallery">Gallery</a></li>
-          <li><a class="page-scroll" href="#team">Meet the team</a></li>
-          <li><a class="page-scroll" href="#contact">Contact us</a></li>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <%= image_tag ('') %>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2009-2011</h4>
+                <h4 class="subheading">Our Humble Beginnings</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+              </div>
+            </div>
+          </li>
+            <li class="timeline-inverted">
+          <!---  <div class="timeline-image"> -->
+  <img src="assets/Pwani.jpg" class="center-block img-responsive img-thumbnail" width="350" height="350" >
+         <!--   </div>  -->
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>March 2011</h4>
+                <h4 class="subheading">Change is Born</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+              </div>
+            </div>
+          </li>
+          <li>
+         <!---   <div class="timeline-image"> -->
+  <img src="assets/img3.jpg" class="center-block img-responsive img-thumbnail" width="350" height="350" >
+          <!--- </div> -->
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>December 2012</h4>
+                <h4 class="subheading">Transition to Full Time Tech Hub</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+  <!--          <div class="timeline-image">  -->
+  <img src="assets/sbox1.jpg" class="center-block img-responsive img-thumbnail" width="350" height="350" >
+          <!--  </div> -->
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>July 2014</h4>
+                <h4 class="subheading">Phase Two Expansion</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>For
+                <br>More
+                <br>Blogs</h4>
+            </div>
+          </li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
 
-    </nav>
-      <header>
-        <div>
-        <video autoplay loop id="video-background" muted plays-inline width="1300" height="700" controls>
-          <source src="/assets/nama.mp4" type="video/mp4">
-        </video>
-        </div>
-      </header>
-      <section id="videocontent">
-        <div class="col-lg-12 text-center">
-          <p>SwahiliBox is a project of M-Power (CBO). The Technology Open Space in Mombasa, Kenya which focuses on socio-economic technology empowerment, <br>inspiring and developing individuals and help them develop new and innovative ideas through networking, access to training and support and professional mentoring and coaching.<br> It brings together investors, donors, entrepreneurs, experts, artists, and other individuals and provides them with an opportunity to share knowledge, <br>learn, find mentors and expound on their talents, abilities and innovative ideas that will lead to the development of Kenya and globally at large.
-          </p>
-        </div>
-      </section>
-      <section id="about">
-        <div style="">
-          <div class="container">
-
-            <h2 style="text-align: center">About Us</h2>
-              <p style="font-size:170% "font-family:times new roman";">
-               SwahiliBox is a project of M-Power (CBO). The Technology Open Space in Mombasa, Kenya which focuses on socio-economic technology empowerment, inspiring and developing individuals and help them develop new and innovative ideas through networking, access to training and support and professional mentoring and coaching. It brings together investors, donors, entrepreneurs, experts, artists, and other individuals and provides them with an opportunity to share knowledge, learn, find mentors and expound on their talents, abilities and innovative ideas that will lead to the development of Kenya and globally at large.
-          </p>
-          </div>
-
-              <div class="row">
-                  <div class="col-lg-12 text-center">
-                      <h2 class="section-heading">About</h2>
-                      <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-lg-12">
-                      <ul class="timeline">
-                          <li>
-                              <div class="timeline-image">
-                                <%= image_tag ('') %>
-                              </div>
-                              <div class="timeline-panel">
-                                  <div class="timeline-heading">
-                                      <h4>2009-2011</h4>
-                                      <h4 class="subheading">Our Humble Beginnings</h4>
-                                  </div>
-                                  <div class="timeline-body">
-                                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                  </div>
-                              </div>
-                          </li>
-                          <li class="timeline-inverted">
-                              <div class="timeline-image">
-                                <%= image_tag ('2.jpg') %>
-                              </div>
-                              <div class="timeline-panel">
-                                  <div class="timeline-heading">
-                                      <h4>March 2011</h4>
-                                      <h4 class="subheading">Change is Born</h4>
-                                  </div>
-                                  <div class="timeline-body">
-                                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                              <div class="timeline-image">
-                                <%= image_tag ('3.jpg') %>
-                              </div>
-                              <div class="timeline-panel">
-                                  <div class="timeline-heading">
-                                      <h4>December 2012</h4>
-                                      <h4 class="subheading">Transition to Full Time Tech Hub</h4>
-                                  </div>
-                                  <div class="timeline-body">
-                                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                  </div>
-                              </div>
-                          </li>
-                          <li class="timeline-inverted">
-                              <div class="timeline-image">
-                                <%= image_tag ('4.jpg') %>
-                              </div>
-                              <div class="timeline-panel">
-                                  <div class="timeline-heading">
-                                      <h4>July 2014</h4>
-                                      <h4 class="subheading">Phase Two Expansion</h4>
-                                  </div>
-                                  <div class="timeline-body">
-                                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                  </div>
-                              </div>
-                          </li>
-                          <li class="timeline-inverted">
-                              <div class="timeline-image">
-                                  <h4>Be Part
-                                      <br>Of Our
-                                      <br>Story!</h4>
-                              </div>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-
-      </section>
-<div class="parallax"></div>
-     <section id="Partners">
-          <div class="container">
-    <h2 style="text-align: center; margin-top: 50px;">Our Splendid Partners</h2>                  </div>
-              </div>
-              <div class="container">
+<div class="parallax">
+  <section id="Partners">
+      <h2 class="text-center" style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Our Splendid Partners</h2>
+</div>
+    <div class="heading-title text-center">
+    <span class="p-top-30 half-txt">This presents some of our patners. </span></br>
+  </div>
+<div class="container">
   <img src="assets/pictures/doen.jpg" width="80" height="80">
   <img src="assets/pictures/hivos.png" width="80" height="80">
   <img src="assets/pictures/partner_01.jpg" width="130" height="130">
@@ -166,174 +112,168 @@
   <img src="assets/pictures/partner_20.png" width="130" height="130">
 </div>
 </section>
-<div class="parallax"></div>
- <section id="blog">
-          <div class="container">
-    <h2 style="text-align: center; margin-top: 50px;">Recent Blogs</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="/assets/Sbox1.jpg" target="_blank">
-          <img src="/assets/Sbox1.jpg"style="width:130%">
-                    <div class="caption">
-
-          <p>
-AUG at SwahiliBox
-</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="/assets/Pwani2.jpg" target="_blank">
-          <img src="/assets/Pwani2.jpg" style="width:100%">
-                        <div class="caption">
-
-          <p>
-Joomla Day Pwani
-Posted February 25, 2017
-Written by M-Power (CBO)
-Category Events
-The event Joomla Day Pwani organised by Swahili Box and was intended to help the larger community in using joomla as a cms for easy and faster daily website development.
-</p>
-          </div>
-        </a>
-    </div>
-    </div>
- <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="/assets/sbox1.jpg" target="_blank">
-          <img src="/assets/sbox1.jpg" style="width:100%">
-                        <div class="caption">
-
-          <p>
-Innovative challenge.
-</p>
-          </div>
-         </div>
-        </a>
-        <div>
-       <a href="#" class="btn btn-info" role="button">MORE</a>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="parallax">
+<section id="gallery">
+      <h2 class="text-center" style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Gallery</h2>
 </div>
-</section>
 
- <section id="gallery">
 <div class="container">
-  <h2> Gallery</h2>
-  <p>Click on the images to enlarge them.</p>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="/assets/pictures/nama 3.jpg" target="_blank">
-          <img src="/assets/pictures/nama 3.jpg"style="width:100%">
-          <div class="caption">
-          </div>
-        </a>
-      </div>
+<p style="text-align: center;">Click on the images to enlarge them.</p>
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/assets/pictures/nama 3.jpg" target="_blank">
+        <img src="/assets/pictures/nama 3.jpg" style="width:100%">
+        <div class="caption"></div>
+      </a>
     </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="/assets/pictures/nama 2.jpg" target="_blank">
-          <img src="/assets/pictures/nama 2.jpg" style="width:100%">
-          <div class="caption">
-          </div>
-        </a>
-      </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/assets/pictures/nama 2.jpg" target="_blank">
+        <img src="/assets/pictures/nama 2.jpg" style="width:100%">
+        <div class="caption"></div>
+      </a>
     </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="/assets/pictures/nama1.jpg" target="_blank">
-          <img src="/assets/pictures/nama1.jpg" style="width:100%">
-          <div class="caption">
-          </div>
-        </div>
-        </a>
-        <div>
-       <a href="#" class="btn btn-info" role="button">CLICK FOR MORE</a>
-          </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/assets/pictures/nama1.jpg" target="_blank">
+        <img src="/assets/pictures/nama1.jpg" style="width:100%">
+        <div class="caption"></div>
       </div>
+    </a>
+    <div>
+      <a href="#" class="btn btn-info" role="button">CLICK FOR MORE</a>
     </div>
   </div>
 </div>
+</div>
+</div>
 </section>
 
-<div class="parallax"></div>
-
+<div class="parallax2">
 <section id="team">
+      <h2 class="text-center" style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Meet the Team</h2>
+</div>
+
 <div class="container">
-  <h1>Meet The Team</h1>
-  <div class="container">
-                      <div class="row">
-                          <div class="heading-title text-center">
-                              <p class="p-top-30 half-txt">This presents some of our team officials. </p>
-                          </div>
+<div class="container">
+<div class="row">
+  <div class="heading-title text-center">
+    <p class="p-top-30 half-txt">This presents some of our team officials.
+    </p>
+  </div>
 
-                          <div class="col-md-4">
-                              <div class="team-member">
-                                   <img src="assets/ahmed 2.jpeg" class="img-circle" alt="Cinque Terre" width="304" height="236">
-                                  <div class="team-hover">
-                                      <div class="desk">
-                                          <h4>Ahmed Maawy</h4>
-                                          <p>Executive Director</p>
-                                      </div>
-                                      <div class="s-link">
-                                          <a href="#"><i class="fa fa-facebook"></i></a>
-                                          <a href="#"><i class="fa fa-twitter"></i></a>
-                                          <a href="#"><i class="fa fa-google-plus"></i></a>
-                                      </div>
-                                  </div>
-                              </div>
+  <div class="col-md-4">
+    <div class="team-member">
+      <img src="assets/ahmed 2.jpeg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+      <div class="team-hover">
+        <div class="desk">
+          <h4>Ahmed Maawy</h4>
+          <p>Executive Director</p>
+        </div>
+        <div class="s-link">
+          <a href="#">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-google-plus"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
-                          </div>
-                          <div class="col-md-4 col-sm-4">
-                              <div class="team-member">
-                                   <img src="/assets/alysalim 1.jpeg" class="img-circle" alt="Cinque Terre" width="304" height="236">
-                                  <div class="team-hover">
-                                      <div class="desk">
-                                          <h4>Aly Salim</h4>
-                                          <p>Deputy Executive Director</p>
-                                      </div>
-                                      <div class="s-link">
-                                          <a href="#"><i class="fa fa-facebook"></i></a>
-                                          <a href="#"><i class="fa fa-twitter"></i></a>
-                                          <a href="#"><i class="fa fa-google-plus"></i></a>
-                                      </div>
-                                  </div>
-                              </div>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <div class="team-member">
+      <img src="/assets/alysalim 1.jpeg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+      <div class="team-hover">
+        <div class="desk">
+          <h4>Aly Salim</h4>
+          <p>Deputy Executive Director</p>
+        </div>
+        <div class="s-link">
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-google-plus"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
-                          </div>
-                          <div class="col-md-4 col-sm-4">
-                              <div class="team-member">
-                                   <img src="assets/ajra 3.jpeg" class="img-circle" alt="Cinque Terre" width="304" height="236">
-                                  <div class="team-hover">
-                                      <div class="desk">
-                                          <h4>Ajra Abdullatif</h4>
-                                          <p>Director of Community Engagement</p>
-                                      </div>
-                                      <div class="s-link">
-                                          <a href="#"><i class="fa fa-facebook"></i></a>
-                                          <a href="#"><i class="fa fa-twitter"></i></a>
-                                          <a href="#"><i class="fa fa-google-plus"></i></a>
-                                      </div>
-                                  </div>
-                              </div>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <div class="team-member">
+      <img src="assets/ajra 3.jpeg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+      <div class="team-hover">
+        <div class="desk">
+          <h4>Ajra Abdullatif</h4>
+          <p>Director of Community Engagement</p>
+        </div>
+        <div class="s-link">
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-google-plus"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
-                          </div>
-
-                      </div>
-
-                  </div>
-                        </div>
-
-                    </div>
+  </div>
 
 </div>
+
+</div>
+</div>
+</div>
+</div>
 </section>
+
+
+<div class="parallax3"></div>
+<section id="success stories">
+  <h2 class="text-center" style="text-align: center; margin-top: 50px; margin-bottom: 50px;">success stories</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="/assets/pictures/nama1.jpg" target="_blank">
+<img src="/assets/pictures/nama1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+<p>add paragraph</p>
+</div>
+</div>
+<div class="col-md-4">
+  <div class="thumbnail">
+      <a href="/assets/pictures/nama1.jpg" target="_blank">
+<img src="/assets/pictures/nama1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+<p> add paragraph</p>
+</div>
+</div>
+<div class="col-md-4">
+  <div class="thumbnail">
+      <a href="/assets/pictures/nama1.jpg" target="_blank">
+<img src="/assets/pictures/nama1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+<p> add paragraph</p>
+</div>
+  </div>
+  </div>
+</div>
+</section>
+<<<<<<< HEAD
 <!-- **********************************contact us ****************** -->
     <section id="contact">
         <div class="container">
@@ -394,3 +334,5 @@ Innovative challenge.
     </footer>
     </body>
     </html>
+=======
+>>>>>>> 9ced375c880c0a1c3e01f384cd5835409e927926
