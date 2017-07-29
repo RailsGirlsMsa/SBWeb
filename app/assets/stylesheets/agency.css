@@ -8,6 +8,7 @@
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #AAAAAA;
 }
 .text-muted {
   color: #777777;
@@ -151,10 +152,14 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom {
   background-color: #222222;
   border-color: transparent;
+  margin-bottom: 0px;
 }
 .navbar-custom .navbar-brand {
   color: #fed136;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+.navbar-brand{
+  margin-top: 10px;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -237,7 +242,6 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('4.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -246,47 +250,9 @@ header {
   background-size: cover;
   -o-background-size: cover;
   text-align: center;
+  height: 580px;
 }
-header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-header .intro-text .intro-lead-in {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 22px;
-  line-height: 22px;
-  margin-bottom: 25px;
-}
-header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 50px;
-  margin-bottom: 25px;
-}
-@media (min-width: 768px) {
-  header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
-  }
-  header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 25px;
-  }
-  header .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 75px;
-    margin-bottom: 50px;
-  }
-}
+
 section {
   padding: 100px 0;
 }
@@ -305,7 +271,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 70px 0;
   }
 }
 .service-heading {
@@ -754,32 +720,24 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
-#video-background {
-/*  making the video fullscreen  */
-  position: absolute;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -100;
+#videocontent {
+  margin-top: 70px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 #videocontent p{
-  font-size: 15px;
-  font-weight: bolder;
-  margin-top: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #000;
+  font-size: 18px;
+  margin-top: 190px;
+  font-weight: bold;
+  background-color: inherit;
   color: #fff;
 }
-#about h2{
-  margin-top: 170px;
+#about{
+  margin-top: 0px;
 }
 .parallax {
     /* The image used */
-    background-image: url("3.jpg");
+    background-image: url("img3.jpg");
 
     /* Set a specific height */
     min-height: 500px; 
@@ -789,5 +747,51 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #000;
+    background-color: transparent;
+}
+.parallax, .parallax1, .parallax2, .parallax3 h2{
+  color: #fff;
+  padding-top: 250px;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url("img2.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url("img1.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+.parallax3 {
+    /* The image used */
+    background-image: url("img4.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
 }
