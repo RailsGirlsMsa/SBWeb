@@ -15,6 +15,9 @@ body {
 .text-primary {
   color: #fed136;
 }
+.privacy{
+  margin-right: 70px;
+}
 p {
   font-size: 14px;
   line-height: 1.75;
@@ -753,7 +756,7 @@ body {
     background-image: url("img3.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -774,7 +777,7 @@ body {
     background-image: url("img2.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -787,7 +790,7 @@ body {
     background-image: url("img1.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -800,7 +803,7 @@ body {
     background-image: url("img4.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -813,7 +816,7 @@ body {
     background-image: url("andla.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -823,4 +826,11 @@ body {
 }
 footer{
   background-color: #000;
+  color: #fec503;
+}
+footer .copyright{
+  color: #fec503;
+}
+footer ul a{
+  color: #fec503;
 }
