@@ -7,14 +7,16 @@
  @import "mixins.scss";
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #AAAAAA;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 .text-muted {
   color: #777777;
 }
 .text-primary {
   color: #fed136;
+}
+.privacy{
+  margin-right: 70px;
 }
 p {
   font-size: 14px;
@@ -44,10 +46,21 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+h6,
+p{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 700;
+}
+.section-heading{
+  text-align: center;
+  font-size: 43px;
+  line-height: 1.3em;
+  letter-spacing: -2px;
+  font-weight: bold;
+  margin: 0;
+    margin-bottom: 0px;
+  padding: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 .img-centered {
   margin: 0 auto;
@@ -197,7 +210,6 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: black;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
@@ -277,6 +289,9 @@ section h3.section-subheading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+#blog{
+    background-color: #AAAAAA;
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -731,6 +746,7 @@ body {
   font-weight: bold;
   background-color: inherit;
   color: #fff;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 #about{
   margin-top: 0px;
@@ -740,7 +756,7 @@ body {
     background-image: url("img3.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -748,6 +764,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
+}
+.parallax, .parallax1, .parallax2, .parallax3{
+    background-color: #AAAAAA;
 }
 .parallax, .parallax1, .parallax2, .parallax3 h2{
   color: #fff;
@@ -758,40 +777,60 @@ body {
     background-image: url("img2.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: transparent;
 }
 .parallax2 {
     /* The image used */
     background-image: url("img1.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: transparent;
 }
 .parallax3 {
     /* The image used */
     background-image: url("img4.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: transparent;
+}
+.parallax4 {
+    /* The image used */
+    background-image: url("andla.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+  background-color: #000;
+  color: #fec503;
+}
+footer .copyright{
+  color: #fec503;
+}
+footer ul a{
+  color: #fec503;
 }
