@@ -164,6 +164,9 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   background-color: white;
 }
+.navbar{
+  border-top: 4px solid #fed136 !important;
+}
 .navbar-custom {
   background-color: #222222;
   border-color: transparent;
@@ -565,7 +568,7 @@ aside.clients img {
   margin: 50px auto;
 }
 section#contact {
-  background-color: #222222;
+  background-color: #424242;
   background-image: url('map-image.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -845,11 +848,11 @@ body {
     background-size: cover;
 }
 footer{
-  background-color: #000;
+  background-color: #424242;
   color: #fec503;
 }
 footer .copyright{
-  color: #fec503;
+  color: #000 !important;
 }
 footer ul a{
   color: #fec503;
