@@ -175,6 +175,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-brand{
   margin-top: 10px;
+  color: #fff !important;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -264,6 +265,14 @@ fieldset[disabled] .btn-xl.active {
     color: #fed136 !important;
   }
 }
+.dropdown-menu {
+  background-color: #333 !important;
+  }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #333 !important;
+}
+
 header {
   background-repeat: no-repeat;
   background-attachment: scroll;
