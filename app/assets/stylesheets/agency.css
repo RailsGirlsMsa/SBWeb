@@ -17,6 +17,9 @@ body {
 .text-primary {
   color: #fed136;
 }
+.privacy{
+  margin-right: 70px;
+}
 p {
   font-size: 14px;
   line-height: 1.75;
@@ -269,8 +272,8 @@ section {
 }
 section h2.section-heading {
   font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin-top: 15;
+  margin-bottom: 10px;
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -825,4 +828,11 @@ body {
 }
 footer{
   background-color: #000;
+  color: #fec503;
+}
+footer .copyright{
+  color: #fec503;
+}
+footer ul a{
+  color: #fec503;
 }
