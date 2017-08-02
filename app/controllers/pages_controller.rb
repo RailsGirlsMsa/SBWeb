@@ -4,8 +4,9 @@ class PagesController < ApplicationController
 
 	end
 
-  def galery
-		
-  end
-
+  def images
+    
+    render :layout => false
 end
+
+  end

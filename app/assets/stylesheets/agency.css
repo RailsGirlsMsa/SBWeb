@@ -6,6 +6,7 @@
  @import "variables.scss";
  @import "mixins.scss";
  
+
 body {
   overflow-x: hidden;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
