@@ -23,10 +23,12 @@
 	color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0 0 10px;
+	text-transform: none !important;
 }
 
 .footer-distributed h3 span{
 	color:  #FF8C00;
+	text-transform: none !important;
 }
 
 /* Footer links */
