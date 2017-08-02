@@ -175,6 +175,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-brand{
   margin-top: 10px;
+  color: #fff !important;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -204,6 +205,15 @@ fieldset[disabled] .btn-xl.active {
   letter-spacing: 1px;
   color: white;
 }
+.navbar-inverse .brand, .navbar-inverse .nav .list a {
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar-inverse .brand, .navbar-inverse .nav .list a:hover {
+    color: #fed136 !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: #fed136;
@@ -242,9 +252,6 @@ fieldset[disabled] .btn-xl.active {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
-  .navbar-custom .navbar-nav > .active > a {
-    border-radius: 3px;
-  }
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
@@ -254,7 +261,18 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
+  .nav .home a{
+    color: #fed136 !important;
+  }
 }
+.dropdown-menu {
+  background-color: #333 !important;
+  }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #333 !important;
+}
+
 header {
   background-repeat: no-repeat;
   background-attachment: scroll;
