@@ -8,5 +8,7 @@ class PagesController < ApplicationController
     
     render :layout => false
 end
+ 	def blogs
+	end
 
   end
