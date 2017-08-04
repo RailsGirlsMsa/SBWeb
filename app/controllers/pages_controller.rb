@@ -6,7 +6,6 @@ class PagesController < ApplicationController
 
   def images
     
-    render :layout => false
 end
  	def blogs
 	end
