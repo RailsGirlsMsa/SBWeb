@@ -1037,6 +1037,12 @@ body {
 .recent-work-wrap:hover .overlay {
   opacity: 1;
 }
+#aboutus .text-center{
+  padding: 0px 100px 0px 100px;
+}
+#aboutus .text-center p{
+    font-size:20px;
+    }
 .text-center {
   margin-bottom:20px;
   font-size:30px;
