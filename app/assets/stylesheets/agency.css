@@ -5,7 +5,6 @@
  */
  @import "variables.scss";
  @import "mixins.scss";
- 
 
 body {
   overflow-x: hidden;
@@ -288,6 +287,11 @@ header {
   height: 580px;
 }
 
+ @media screen and (max-width:579px) {
+   #{container-fluid
+     width:100%
+   }
+ }
 section {
   padding: 100px 0;
 }
@@ -868,7 +872,7 @@ body {
 }
 
 
-.portfolio-items, 
+.portfolio-items,
 .portfolio-filter {
   list-style: none outside none;
   margin: 0 0 40px 0;
@@ -978,7 +982,9 @@ body {
 }
 
 .recent-work-wrap img{
-  width: 100%;
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
 }
 
 .recent-work-wrap .recent-work-inner{
@@ -1007,13 +1013,13 @@ body {
   height: 100%;
   opacity: 0;
   border-radius: 0;
-  background: #333;
+  background:rgba(1,1,1,0.5);
   color: #fff;
   vertical-align: middle;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
-  transition: opacity 500ms;  
+  transition: opacity 500ms;
   padding: 30px;
 }
 

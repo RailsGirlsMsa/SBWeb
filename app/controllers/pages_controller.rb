@@ -5,7 +5,7 @@ class PagesController < ApplicationController
 	end
 
   def images
-    
+
 end
  	def blogs
 	end
