@@ -852,18 +852,20 @@ body {
     background-size: cover;
 }
 .center h2{
-  font-size: 40px;
-  margin-top: 0;
+  font-size: 50px;
+  margin-top: 20px;
   margin-bottom: 10px;
   text-align:center;
   color:#000;
-  text-transform:uppercase;
+  text-transform:capitalize;
+  font-style: georgia;
 }
 
 #portfolio .lead {
   text-align:center;
   font-size:18px;
   margin-bottom:40px;
+
 }
 
 #portfolio {
@@ -887,7 +889,7 @@ body {
   color: #333;
   font-size: 14px;
   font-weight: 400;
-  margin-right: 20px;
+  margin-right: 5px;
   text-transform: uppercase;
   transition: all 0.9s ease 0s;
   -moz-transition: all 0.9s ease 0s;
@@ -909,7 +911,7 @@ body {
 
 .portfolio-items > li {
   float: left;
-  padding: 0;
+  padding: 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -917,7 +919,7 @@ body {
 
 .portfolio-item {
   margin: 0;
-  padding:0;
+  padding:10px;
 }
 
 /* Start: Recommended Isotope styles */
@@ -983,7 +985,7 @@ body {
 
 .recent-work-wrap img{
   width: 300px;
-  height: 450px;
+  height: 300px;
   object-fit: cover;
 }
 
