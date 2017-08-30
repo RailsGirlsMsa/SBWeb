@@ -321,8 +321,12 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
-#blog{
+#blog h1{
     background-color: #fff;
+    text-transform: capitalize;
+    font-style:italic;
+    font-size:70px;
+    padding-top:5px;
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -844,7 +848,7 @@ body {
 }
 .parallax4 {
     /* The image used */
-    background-image: url("andla.jpg");
+    background-image: url("un.jpg");
 
     /* Set a specific height */
     min-height: 500px;
