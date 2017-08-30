@@ -5,16 +5,19 @@
  */
  @import "variables.scss";
  @import "mixins.scss";
+
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #AAAAAA;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 .text-muted {
   color: #777777;
 }
 .text-primary {
   color: #fed136;
+}
+.privacy{
+  margin-right: 70px;
 }
 p {
   font-size: 14px;
@@ -44,10 +47,21 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+h6,
+p{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 700;
+}
+.section-heading{
+  text-align: center;
+  font-size: 43px;
+  line-height: 1.3em;
+  letter-spacing: -2px;
+  font-weight: bold;
+  margin: 0;
+    margin-bottom: 0px;
+  padding: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 .img-centered {
   margin: 0 auto;
@@ -149,6 +163,9 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   background-color: white;
 }
+.navbar{
+  border-top: 4px solid #fed136 !important;
+}
 .navbar-custom {
   background-color: #222222;
   border-color: transparent;
@@ -160,6 +177,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-brand{
   margin-top: 10px;
+  color: #fff !important;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -189,6 +207,15 @@ fieldset[disabled] .btn-xl.active {
   letter-spacing: 1px;
   color: white;
 }
+.navbar-inverse .brand, .navbar-inverse .nav .list a {
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar-inverse .brand, .navbar-inverse .nav .list a:hover {
+    color: #fed136 !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: #fed136;
@@ -197,7 +224,6 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: black;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
@@ -228,9 +254,6 @@ fieldset[disabled] .btn-xl.active {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
-  .navbar-custom .navbar-nav > .active > a {
-    border-radius: 3px;
-  }
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
@@ -240,7 +263,18 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
+  .nav .home a{
+    color: #fed136 !important;
+  }
 }
+.dropdown-menu {
+  background-color: #333 !important;
+  }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #333 !important;
+}
+
 header {
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -253,13 +287,18 @@ header {
   height: 580px;
 }
 
+ @media screen and (max-width:579px) {
+   #{container-fluid
+     width:100%
+   }
+ }
 section {
   padding: 100px 0;
 }
 section h2.section-heading {
   font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin-top: 15;
+  margin-bottom: 10px;
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -277,6 +316,9 @@ section h3.section-subheading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+#blog{
+    background-color: #fff;
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -530,7 +572,7 @@ aside.clients img {
   margin: 50px auto;
 }
 section#contact {
-  background-color: #222222;
+  background-color: #424242;
   background-image: url('map-image.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -731,6 +773,7 @@ body {
   font-weight: bold;
   background-color: inherit;
   color: #fff;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 #about{
   margin-top: 0px;
@@ -740,7 +783,7 @@ body {
     background-image: url("img3.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -748,6 +791,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
+}
+.parallax, .parallax1, .parallax2, .parallax3{
+    background-color: #AAAAAA;
 }
 .parallax, .parallax1, .parallax2, .parallax3 h2{
   color: #fff;
@@ -758,40 +804,258 @@ body {
     background-image: url("img2.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: transparent;
 }
 .parallax2 {
     /* The image used */
     background-image: url("img1.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: transparent;
 }
 .parallax3 {
     /* The image used */
     background-image: url("img4.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: transparent;
+}
+.parallax4 {
+    /* The image used */
+    background-image: url("andla.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center h2{
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align:center;
+  color:#000;
+  text-transform:capitalize;
+  font-style: georgia;
+}
+
+#portfolio .lead {
+  text-align:center;
+  font-size:18px;
+  margin-bottom:40px;
+
+}
+
+#portfolio {
+  padding-top:100px;
+  position:center;
+}
+
+
+.portfolio-items,
+.portfolio-filter {
+  list-style: none outside none;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.portfolio-filter > li {
+  display: inline-block;
+}
+
+.portfolio-filter > li a {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 5px;
+  text-transform: uppercase;
+  transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+  border: 1px solid #F2F2F2;
+  outline: none;
+  border-radius: 0;
+}
+
+.portfolio-filter > li a:hover,
+.portfolio-filter > li a.active{
+  color:#fff;
+  background: #2487cd ;
+  border: 1px solid #2487cd ;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.portfolio-items > li {
+  float: left;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.portfolio-item {
+  margin: 0;
+  padding:10px;
+}
+
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.recent-work-wrap {
+  position: relative;
+}
+
+.recent-work-wrap img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.recent-work-wrap .recent-work-inner{
+  top: 0;
+  background: transparent;
+  opacity: .8;
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.recent-work-wrap .recent-work-inner h3{
+  margin: 10px 0;
+}
+
+.recent-work-wrap .recent-work-inner h3 a{
+  font-size: 24px;
+  color: #fff;
+}
+
+.recent-work-wrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 0;
+  background:rgba(1,1,1,0.5);
+  color: #fff;
+  vertical-align: middle;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  padding: 30px;
+}
+
+.recent-work-wrap .overlay .preview {
+  bottom: 0;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 0;
+  background: transparent;
+  text-align: center;
+  color: #fff;
+}
+
+.recent-work-wrap:hover .overlay {
+  opacity: 1;
+}
+#aboutus .text-center{
+  padding: 0px 100px 0px 100px;
+}
+#aboutus .text-center p{
+    font-size:20px;
+    }
+.text-center {
+  margin-bottom:20px;
+  font-size:30px;
+}
+footer{
+  background-color: #424242;
+  color: #fec503;
+}
+footer .copyright{
+  color: #000 !important;
+}
+footer ul a{
+  color: #fec503;
 }
