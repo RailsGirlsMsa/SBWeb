@@ -883,6 +883,32 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax5 {
+    /* The image used */
+    background-image: url("img5.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax6 {
+    /* The image used */
+    background-image: url("img6.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .center h2{
   font-size: 50px;
   margin-top: 20px;
