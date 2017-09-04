@@ -858,7 +858,7 @@ body {
 }
 .parallax3 {
     /* The image used */
-    background-image: url("img4.jpg");
+    background-image: url("homepage.jpg");
 
     /* Set a specific height */
     min-height: 500px;
