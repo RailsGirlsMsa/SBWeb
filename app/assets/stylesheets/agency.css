@@ -43,6 +43,8 @@ a:active,
 a.active {
   color: #fec503;
 }
+
+ .img-fluid . max-width: 100%; height: auto;
 h1,
 h2,
 h3,
