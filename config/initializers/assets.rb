@@ -6,6 +6,7 @@ Rails.application.config.assets.precompile += %w( agency.css )
 Rails.application.config.assets.precompile += %w( footer.css )
 Rails.application.config.assets.precompile += %w( bootstrap.css )
 Rails.application.config.assets.precompile += %w( font-awesome.css )
+Rails.application.config.assets.precompile += %w( isotope.js )
 
 
 
