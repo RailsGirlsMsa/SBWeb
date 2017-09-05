@@ -335,7 +335,6 @@ section h3.section-subheading {
 #blog h1{
     background-color: #fff;
     text-transform: capitalize;
-    font-style:italic;
     font-size:70px;
     padding-top:5px;
 }
@@ -861,7 +860,7 @@ body {
 }
 .parallax3 {
     /* The image used */
-    background-image: url("img4.jpg");
+    background-image: url("homepage.jpg");
 
     /* Set a specific height */
     min-height: 500px;
