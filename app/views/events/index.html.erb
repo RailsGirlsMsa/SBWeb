@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+    <% @events.each do |event| %>
+    <div class="col-md-4 text-center">
+      <div class="text-center">
+        <h2><%= event.title %></h2>
+        <h6><%= event.created_at.strftime('%b %d, %Y') %></h6>
+      </div>
+      <div>
+        <%= raw(event.body).truncate(358) %>
+      </div>
+      <div class="text-center">
+        <%= link_to "READ MORE", event_path(event) %>
+      </div>
+      <% if admin_signed_in? %>
+        <%= link_to "Show", event_path(event), class: "btn btn-primary" %>
+        <%= link_to "Edit", edit_event_path(event), class: "btn btn-default" %>
+        <%= link_to "Delete", event_path(event), class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
+      <% end %>
+      <hr />
+    </div>
+    <% end %>
+  </div>
+</div>
