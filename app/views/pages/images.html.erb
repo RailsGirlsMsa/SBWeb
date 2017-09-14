@@ -22,15 +22,15 @@
                   </div>
                 </div>
               </div>
-            </div><!--/.portfolio-item-->
- <% end %>
-      <% if admin_signed_in? %>
-        <%= link_to "Show", post_path(post), class: "btn btn-primary" %>
-        <%= link_to "Edit", edit_post_path(post), class: "btn btn-default" %>
-        <%= link_to "Delete", post_path(post), class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
+                  <% if admin_signed_in? %>
+        <%= link_to "Show", image_path(image), class: "btn btn-primary" %>
+        <%= link_to "Edit", edit_image_path(image), class: "btn btn-default" %>
+        <%= link_to "Delete", image_path(image), class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
       <% end %>
       <hr />
-          </div>
+  </div><!--/.portfolio-item-->
+   <% end %>
+    </div>
         </div>
       </div>
     </div>

@@ -21,16 +21,7 @@ gem "font-awesome-rails" # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-<<<<<<< HEAD
-gem 'simple_form', '~> 3.2'
-gem 'bootstrap-sass', '~> 3.3'
-gem 'ckeditor', '~> 4.1'
-gem 'devise'
-gem 'carrierwave'
-gem 'mini_magick'
-=======
 gem 'mail_form', '~>1.7.0'
->>>>>>> 564893e6aa041af023806e1391a07643334048b2
 
 group :development, :test do
   gem 'byebug', platform: :mri

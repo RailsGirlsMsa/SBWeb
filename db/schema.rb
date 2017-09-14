@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170912154509) do
-=======
-ActiveRecord::Schema.define(version: 20170912114307) do
->>>>>>> 564893e6aa041af023806e1391a07643334048b2
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,10 +28,7 @@ ActiveRecord::Schema.define(version: 20170912114307) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-<<<<<<< HEAD
-=======
     t.string   "avatar"
->>>>>>> 564893e6aa041af023806e1391a07643334048b2
     t.index ["email"], name: "index_admins_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
   end
@@ -52,7 +45,13 @@ ActiveRecord::Schema.define(version: 20170912114307) do
     t.index ["type"], name: "index_ckeditor_assets_on_type", using: :btree
   end
 
-<<<<<<< HEAD
+  create_table "events", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "galleries", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
@@ -68,9 +67,6 @@ ActiveRecord::Schema.define(version: 20170912114307) do
   end
 
   create_table "images", force: :cascade do |t|
-=======
-  create_table "events", force: :cascade do |t|
->>>>>>> 564893e6aa041af023806e1391a07643334048b2
     t.string   "title"
     t.text     "body"
     t.datetime "created_at", null: false
