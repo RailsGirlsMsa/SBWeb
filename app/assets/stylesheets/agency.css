@@ -332,6 +332,7 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
+
 #blog h1{
     background-color: #fff;
     text-transform: capitalize;
@@ -1052,7 +1053,7 @@ body {
   position: relative;
 }
 
-.recent-work-wrap img{
+.recent-work-wrap .image-responsive img{
   width: 300px;
   height: 300px;
   object-fit: cover;

@@ -11,12 +11,16 @@ gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
-gem 'bootstrap', '~> 4.0.0.alpha6'
 gem "font-awesome-rails" # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-
+gem 'simple_form', '~> 3.2'
+gem 'bootstrap-sass', '~> 3.3'
+gem 'ckeditor', '~> 4.1'
+gem 'devise'
+gem 'carrierwave'
+gem 'mini_magick'
 
 group :development, :test do
   gem 'byebug', platform: :mri
