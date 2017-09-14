@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  layout "dashboard"
   before_action :find_event, only: [:edit, :update, :show, :delete]
 
   #This authenticates admin whenever a event is to be created, updated or destroyed.

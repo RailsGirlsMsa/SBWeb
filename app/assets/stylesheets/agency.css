@@ -282,6 +282,9 @@ fieldset[disabled] .btn-xl.active {
     color: #fed136 !important;
   }
 }
+.navbar-header .navbar-brand{
+  color: #000 !important;
+}
 .dropdown-menu {
   background-color: #333 !important;
   }
