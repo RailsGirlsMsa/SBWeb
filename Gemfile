@@ -5,7 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'devise'
+gem 'therubyracer'
+gem 'ckeditor', '~> 4.1'
+gem 'simple_form', '~> 3.2'
+gem 'bootstrap-sass', '~> 3.3'
 gem 'rails', '~> 5.0.3'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
@@ -15,12 +21,16 @@ gem "font-awesome-rails" # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+<<<<<<< HEAD
 gem 'simple_form', '~> 3.2'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'ckeditor', '~> 4.1'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
+=======
+gem 'mail_form', '~>1.7.0'
+>>>>>>> 564893e6aa041af023806e1391a07643334048b2
 
 group :development, :test do
   gem 'byebug', platform: :mri

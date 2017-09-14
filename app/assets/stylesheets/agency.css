@@ -282,6 +282,9 @@ fieldset[disabled] .btn-xl.active {
     color: #fed136 !important;
   }
 }
+.navbar-header .navbar-brand{
+  color: #000 !important;
+}
 .dropdown-menu {
   background-color: #333 !important;
   }
@@ -610,6 +613,9 @@ section#contact {
   background-image: url('map-image.png');
   background-position: center;
   background-repeat: no-repeat;
+}
+h1 {
+  text-transform: capitalize;
 }
 section#contact .section-heading {
   color: white;

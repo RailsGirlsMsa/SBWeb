@@ -1,0 +1,5 @@
+<div class=" col-md-4">
+  <h2 class="text-center"><%= @event.title %></h2>
+  <h5 class="text-center"><%= @event.created_at.strftime('%b %d, %Y') %></h5>
+  <div><%= raw @event.body %></div>
+</div>
