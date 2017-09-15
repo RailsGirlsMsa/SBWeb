@@ -43,6 +43,8 @@ a:active,
 a.active {
   color: #fec503;
 }
+
+ .img-fluid . max-width: 100%; height: auto;
 h1,
 h2,
 h3,
@@ -842,6 +844,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: transparent;
 }
 .parallax2 {
     /* The image used */
@@ -855,6 +858,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: transparent;
 }
 .parallax3 {
     /* The image used */
@@ -868,6 +872,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: transparent;
 }
 .parallax4 {
     /* The image used */
@@ -881,6 +886,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: transparent;
 }
 .parallax5 {
     /* The image used */
@@ -894,6 +900,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: transparent;
 }
 .parallax6 {
     /* The image used */
@@ -907,6 +914,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: transparent;
+}
+#events h2, #team h2, #stories h2{
+  padding-top: 250px;
+  color: #fff;
 }
 .center h2{
   font-size: 50px;
