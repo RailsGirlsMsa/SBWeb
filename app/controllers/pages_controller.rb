@@ -1,13 +1,21 @@
 class PagesController < ApplicationController
-	def home
-		puts "Welcome to SwahiliBox"
+ layout "application"
+  before_action :find_image, only: [:edit, :update, :show, :delete]
+  before_action :find_event, only: [:edit, :update, :show, :delete]
 
-	end
 
-  def images
+  # Index action to render all events
+  def home
+    @events = Event.all
+  end
 
-end
+  # Index action to render all posts
+  def index
+    @images = Image.all
+    render :images
+  end
+
  	def blogs
 	end
 
-  end
+end

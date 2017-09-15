@@ -11,9 +11,15 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require ckeditor/init
 //= require jquery
+<<<<<<< HEAD
 //=require bootstrap-sprockets
+=======
+//= require bootstrap-sprockets
+>>>>>>> 51d197e88695659201c129bad5ecceacf49f1f3f
 //= require jquery_ujs
 //= require turbolinks
+//= require ckeditor/init
 //= require_tree .
 //= require isotope

@@ -19,7 +19,7 @@
 </div>
 <div class="container">
 <div class="row">
-  <img class="col-md-2" src="assets/pictures/partner_19.png" class="img-fluid" width="130" height="130">
+  <img class="col-md-2" src="assets/pictures/partner_19.png" width="130" height="130">
   <img class="col-md-2" src="assets/pictures/partner_20.png" width="130" height="130">
   <img class="col-md-2" src="assets/pictures/partner_01.jpg" width="130" height="130">
   <img class="col-md-2" src="assets/pictures/partner_02.jpg" width="130" height="130">
@@ -58,7 +58,23 @@
       <h2 class="section-heading">Upcoming events</h2>
 </div>
 <div class="container" style="padding-top:50px;" "margin-bottom:90px;">
-  <p class= "text-center">There are no upcoming events</p>
+  <div class="container">
+      <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+        <% @events.each do |event| %>
+        <div class="col-md-4 text-center">
+          <div class="text-center">
+            <h2><%= event.title %></h2>
+            <h6><%= event.created_at.strftime('%b %d, %Y') %></h6>
+          </div>
+          <div>
+            <%= raw(event.body).truncate(358) %>
+          </div>
+
+          <hr />
+        </div>
+        <% end %>
+      </div>
+    </div>
 </div>
 </section>
 

@@ -282,6 +282,10 @@ fieldset[disabled] .btn-xl.active {
     color: #fed136 !important;
   }
 }
+.navbar-header .admin-nav{
+  color: #000 !important;
+  margin-top: 15px !important;
+}
 .dropdown-menu {
   background-color: #333 !important;
   }
@@ -332,6 +336,7 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
+
 #blog h1{
     background-color: #fff;
     text-transform: capitalize;
@@ -609,6 +614,9 @@ section#contact {
   background-image: url('map-image.png');
   background-position: center;
   background-repeat: no-repeat;
+}
+h1 {
+  text-transform: capitalize;
 }
 section#contact .section-heading {
   color: white;
@@ -1052,7 +1060,7 @@ body {
   position: relative;
 }
 
-.recent-work-wrap img{
+.recent-work-wrap .image-responsive img{
   width: 300px;
   height: 300px;
   object-fit: cover;
