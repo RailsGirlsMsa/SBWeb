@@ -6,11 +6,11 @@ Rails.application.routes.draw do
 root to: 'pages#home'
 
 resources :events
-get "/images", to: "pages#images", as: "index"
+get "/images", to: "pages#index", as: "index"
 get "/blogs/page", to: "pages#blogs", as: "blogs"
 get "/events/show", to: "events#show", as: "show"
 
-root to: "pages#images"
+root to: "pages#index"
 
 resources :images
 end
