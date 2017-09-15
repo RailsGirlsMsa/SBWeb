@@ -10,7 +10,7 @@ get "/images", to: "pages#index", as: "images"
 get "/blogs/page", to: "pages#blogs", as: "blogs"
 get "/events/show", to: "events#show", as: "show"
 
-root to: "images#index"
+root to: "pages#index"
 
 resources :images
 end
