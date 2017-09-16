@@ -7,10 +7,10 @@ root to: 'pages#home'
 
 resources :events
 get "/images", to: "pages#index", as: "index"
-get "/blogs/page", to: "pages#blogs", as: "blogs"
+get "/blogs", to:  "pages#blog", as: "blogs"
 get "/events/show", to: "events#show", as: "show"
 
 root to: "pages#index"
-
+resources :blogs
 resources :images
 end
