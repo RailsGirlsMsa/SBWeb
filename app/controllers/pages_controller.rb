@@ -15,7 +15,9 @@ class PagesController < ApplicationController
     render :images
   end
 
- 	def blogs
-	end
+  def blog
+    @blogs = Blog.all
+    render :blogs
+  end
 
 end
