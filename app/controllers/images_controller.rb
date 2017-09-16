@@ -41,6 +41,7 @@ class ImagesController < ApplicationController
   # The show action renders the individual post after retrieving the the id
   def show
     @images = Image.all
+    render :index
   end
 
   # The destroy action removes the post permanently from the database
