@@ -41,8 +41,7 @@ class CkeditorPictureUploader < CarrierWave::Uploader::Base
 
   version :small do
     process resize_to_fill: [118, 100]
-  end
-
+end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
