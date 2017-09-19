@@ -11,10 +11,10 @@
 // about supported directives.
 //
 //= require ckeditor/init
-//= require jquery
 //= require bootstrap-sprockets
+//= require bootstrap
+//= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require ckeditor/init
 //= require_tree .
 //= require isotope
