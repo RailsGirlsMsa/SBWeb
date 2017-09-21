@@ -21,8 +21,6 @@ gem "font-awesome-rails" # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'simple_form', '~> 3.2'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'mail_form', '~>1.7.0'
 
 

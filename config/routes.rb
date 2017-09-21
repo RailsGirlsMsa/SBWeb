@@ -15,7 +15,7 @@ root to: "pages#index"
 resources :images
 end
 Rails.application.routes.draw do
-  root to: "posts#index"
+  root to: "blogs#index"
 
-  resources :posts
+  resources :blogs
 end
