@@ -86,6 +86,7 @@ ActionMailer::Base.smtp_settings = {
   :domain => 'heroku.com',
   :enable_starttls_auto => true
 }
+end
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
@@ -99,4 +100,3 @@ ActionMailer::Base.smtp_settings = {
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-end
