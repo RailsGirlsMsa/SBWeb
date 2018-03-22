@@ -5,7 +5,7 @@ A website designed for swahilibox community
 Make sure you have ruby and rails installed.
 
 To get your local
- 
+
 	 git clone `git@github.com:RailsGirlsMsa/SBWeb.git`
 
 	 cd SBWeb
@@ -21,4 +21,4 @@ This application is a volunteer effort. We encourage you to pitch in and join th
 
 This project is licensed under the **_MIT license._**
 
-Thanks
+Thank You!
