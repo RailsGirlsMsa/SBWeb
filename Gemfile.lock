@@ -129,7 +129,7 @@ GEM
       sprockets-rails (>= 2.0.0)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
-      nokogiri (>= 1.6)
+      nokogiri (>= 1.8.2)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     railties (5.0.6)
